@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zeus Battle, a fast single-player 1v1 lightning skill arena game for Android.">
+  <title>Zeus Battle</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080a12;
+      --panel: #111827;
+      --panel-soft: rgba(17, 24, 39, 0.74);
+      --line: rgba(255, 232, 16, 0.28);
+      --gold: #ffe810;
+      --gold-dark: #ffb800;
+      --blue: #51c9ff;
+      --text: #f5f7ff;
+      --muted: #bac4df;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .hero {
+      min-height: 86vh;
+      display: flex;
+      align-items: end;
+      background:
+        linear-gradient(180deg, rgba(8, 10, 18, 0.10) 0%, rgba(8, 10, 18, 0.60) 48%, #080a12 100%),
+        url("assets/hero.png") center / cover no-repeat;
+    }
+
+    .hero-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 72px 24px 80px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.76fr);
+      gap: 28px;
+    }
+
+    .hero-copy {
+      grid-column: 2;
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.68);
+    }
+
+    .app-mark {
+      width: 86px;
+      height: 86px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.42);
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 20px 0 12px;
+      color: var(--gold);
+      font-size: clamp(44px, 8vw, 92px);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 620px;
+      margin: 0 0 28px;
+      color: var(--text);
+      font-size: 20px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      background: rgba(17, 24, 39, 0.84);
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: var(--gold);
+      background: linear-gradient(180deg, var(--gold), var(--gold-dark));
+      color: #111827;
+    }
+
+    .button.disabled {
+      color: rgba(245, 247, 255, 0.62);
+      text-shadow: none;
+      cursor: not-allowed;
+    }
+
+    main {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 42px 24px 64px;
+    }
+
+    .section {
+      padding: 30px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--gold);
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .feature {
+      min-height: 150px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      background: var(--panel-soft);
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--blue);
+      font-size: 17px;
+    }
+
+    .feature p,
+    .community p,
+    footer p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .community {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    footer {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        min-height: 84vh;
+        background-position: 36% center;
+      }
+
+      .hero-inner {
+        padding: 48px 18px 52px;
+        display: block;
+      }
+
+      .lead {
+        font-size: 17px;
+      }
+
+      .actions,
+      .community {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <img class="app-mark" src="assets/app-icon.png" alt="Zeus Battle app icon">
+        <h1>ZEUS BATTLE</h1>
+        <p class="lead">번개의 신 제우스가 되어 AI와 겨루는 모바일 1:1 스킬 아레나.</p>
+        <div class="actions" aria-label="Primary links">
+          <a class="button primary" href="https://play.google.com/store/apps/details?id=kode.beerock.io">Google Play 다운로드</a>
+          <a class="button" href="privacy.html">개인정보처리방침</a>
+          <span class="button disabled" aria-disabled="true">네이버 카페 준비 중</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" aria-labelledby="features-title">
+      <h2 id="features-title">게임 특징</h2>
+      <div class="grid">
+        <div class="feature">
+          <strong>짧은 1:1 결투</strong>
+          <p>AI를 상대로 빠르게 한 판을 끝내는 싱글플레이 아레나 전투.</p>
+        </div>
+        <div class="feature">
+          <strong>4개의 번개 스킬</strong>
+          <p>투사체, 폭풍 구름, 순간이동, 궁극기를 타이밍에 맞춰 사용.</p>
+        </div>
+        <div class="feature">
+          <strong>모바일 조작</strong>
+          <p>왼손 조이스틱과 오른손 스킬 버튼으로 바로 플레이 가능.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="community-title">
+      <h2 id="community-title">커뮤니티</h2>
+      <div class="community">
+        <p>공지, 패치노트, 버그 제보, 이벤트는 공식 커뮤니티 개설 후 이곳에 연결합니다.</p>
+        <div class="actions">
+          <span class="button disabled" aria-disabled="true">YouTube 준비 중</span>
+          <span class="button disabled" aria-disabled="true">Instagram 준비 중</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:your-email@example.com">Contact</a>
+    </div>
+    <p>Copyright 2026 Zeus Battle. Replace placeholder links before publishing.</p>
+  </footer>
+</body>
+</html>
