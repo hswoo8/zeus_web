@@ -25,7 +25,7 @@ If the final application id changes, update the link in `index.html`.
 
 ## Deploy To GitHub Pages
 
-Create an empty public GitHub repo named `zeus-battle-site`, then run:
+Create an empty public GitHub repo named `zeus_web`, then run:
 
 ```bash
 cd /Users/user/Desktop/zeus-battle-site
@@ -42,6 +42,6 @@ In GitHub:
 Expected URLs:
 
 ```text
-https://hswoo8.github.io/zeus-battle-site/
-https://hswoo8.github.io/zeus-battle-site/privacy.html
+https://hswoo8.github.io/zeus_web/
+https://hswoo8.github.io/zeus_web/privacy.html
 ```
