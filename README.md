@@ -13,6 +13,7 @@ Before publishing, replace these placeholders:
 - Naver Cafe link
 - YouTube link
 - Instagram link
+- Buy Me a Coffee link, if support is opened
 - Copyright/developer name if needed
 
 The Google Play link already uses the Android package id:
@@ -25,21 +26,28 @@ If the final application id changes, update the link in `index.html`.
 
 ## Deploy To GitHub Pages
 
-Create an empty public GitHub repo named `zeus_web`, then run:
+This source is mirrored to the public deployment repo:
+
+```text
+/Users/user/Desktop/zeus-battle-site
+https://github.com/hswoo8/zeus_web
+```
+
+Deploy after syncing:
 
 ```bash
 cd /Users/user/Desktop/zeus-battle-site
 git push -u origin main
 ```
 
-In GitHub:
+GitHub Pages settings:
 
 1. Open `Settings > Pages`.
 2. Set `Source` to `Deploy from a branch`.
 3. Set branch to `main` and folder to `/root`.
 4. Save.
 
-Expected URLs:
+Public URLs:
 
 ```text
 https://hswoo8.github.io/zeus_web/
