@@ -9,12 +9,12 @@ Minimal public website for Zeus Battle.
 
 Before publishing, replace these placeholders:
 
-- `your-email@example.com`
 - Naver Cafe link
 - YouTube link
 - Instagram link
 - Buy Me a Coffee link, if support is opened
 - Copyright/developer name if needed
+- Tester/contact email if it changes from `bakingstudio.beta@gmail.com`
 
 The Google Play link already uses the Android package id:
 
