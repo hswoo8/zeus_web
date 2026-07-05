@@ -9,10 +9,8 @@ Minimal public website for Zeus Battle.
 
 Before publishing, replace these placeholders:
 
-- Naver Cafe link
 - YouTube link
 - Instagram link
-- Toonation link, if support is opened
 - Copyright/developer name if needed
 - Tester/contact email if it changes from `bakingstudio.beta@gmail.com`
 
