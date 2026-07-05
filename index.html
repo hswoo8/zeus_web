@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zeus Battle, a fast single-player 1v1 lightning skill arena game for Android.">
-  <title>Zeus Battle</title>
+  <meta name="description" content="미니제우스, 귀여운 제우스와 펼치는 1:1 번개 스킬 대전.">
+  <title>미니제우스</title>
   <style>
     :root {
       color-scheme: dark;
@@ -164,6 +164,12 @@
       color: var(--muted);
     }
 
+    .support-copy {
+      display: grid;
+      gap: 6px;
+      max-width: 720px;
+    }
+
     .community,
     .tester,
     .support {
@@ -213,7 +219,9 @@
       }
 
       .actions,
-      .community {
+      .community,
+      .tester,
+      .support {
         align-items: stretch;
         flex-direction: column;
       }
@@ -232,11 +240,11 @@
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-copy">
-        <img class="app-mark" src="assets/app-icon.png" alt="Zeus Battle app icon">
-        <h1>ZEUS BATTLE</h1>
-        <p class="lead">번개의 신 제우스가 되어 AI와 겨루는 모바일 1:1 스킬 아레나.</p>
+        <img class="app-mark" src="assets/app-icon.png" alt="미니제우스 앱 아이콘">
+        <h1>미니제우스</h1>
+        <p class="lead">귀여운 제우스와 펼치는 모바일 1:1 번개 스킬 대전.</p>
         <div class="actions" aria-label="Primary links">
-          <a class="button primary" href="https://play.google.com/store/apps/details?id=kode.beerock.io">Google Play 다운로드</a>
+          <a class="button primary" href="https://play.google.com/store/apps/details?id=com.bakingstudio.minizeus">Google Play 다운로드</a>
           <a class="button" href="#tester">테스터 모집</a>
           <a class="button" href="privacy.html">개인정보처리방침</a>
           <span class="button disabled" aria-disabled="true">네이버 카페 준비 중</span>
@@ -269,7 +277,7 @@
       <div class="tester">
         <p>Android 테스트 빌드 플레이, 조작감 피드백, 버그 제보에 참여할 테스터를 모집합니다.</p>
         <div class="actions">
-          <a class="button primary" href="mailto:bakingstudio.beta@gmail.com?subject=Zeus%20Battle%20%ED%85%8C%EC%8A%A4%ED%84%B0%20%EC%8B%A0%EC%B2%AD&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94.%20Zeus%20Battle%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%B0%B8%EC%97%AC%EB%A5%BC%20%EC%8B%A0%EC%B2%AD%ED%95%A9%EB%8B%88%EB%8B%A4.%0A%0A%EB%8B%89%EB%84%A4%EC%9E%84%3A%0A%EC%97%B0%EB%9D%BD%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0AAndroid%20%EA%B8%B0%EA%B8%B0%20%EB%AA%A8%EB%8D%B8%3A%0AAndroid%20OS%20%EB%B2%84%EC%A0%84%3A%0A%ED%94%8C%EB%A0%88%EC%9D%B4%20%EA%B0%80%EB%8A%A5%20%EC%8B%9C%EA%B0%84%EB%8C%80%3A%0A%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B0%80%EB%8A%A5%20%EA%B8%B0%EA%B0%84%3A%0A%ED%94%BC%EB%93%9C%EB%B0%B1%20%EA%B0%80%EB%8A%A5%20%ED%95%AD%EB%AA%A9%3A%20%EC%A1%B0%EC%9E%91%EA%B0%90%20/%20%EB%82%9C%EC%9D%B4%EB%8F%84%20/%20%EB%B2%84%EA%B7%B8%20/%20%ED%99%94%EB%A9%B4%20%EB%B9%84%EC%9C%A8%20/%20%EA%B8%B0%ED%83%80%0AGoogle%20Play%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%B0%B8%EC%97%AC%20%EC%9D%B4%EB%A9%94%EC%9D%BC%28%EB%8B%A4%EB%A5%BC%20%EA%B2%BD%EC%9A%B0%29%3A%0A%EA%B8%B0%ED%83%80%20%EC%9D%98%EA%B2%AC%3A%0A%0A%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%96%88%EA%B3%A0%2C%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%95%88%EB%82%B4%EC%99%80%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%ED%99%95%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%B4%20%EC%9C%84%20%EC%A0%95%EB%B3%B4%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EA%B2%83%EC%97%90%20%EB%8F%99%EC%9D%98%ED%95%A9%EB%8B%88%EB%8B%A4.">테스터 신청</a>
+          <a class="button primary" href="mailto:bakingstudio.beta@gmail.com?subject=MiniZeus%20%ED%85%8C%EC%8A%A4%ED%84%B0%20%EC%8B%A0%EC%B2%AD&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94.%20MiniZeus%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%B0%B8%EC%97%AC%EB%A5%BC%20%EC%8B%A0%EC%B2%AD%ED%95%A9%EB%8B%88%EB%8B%A4.%0A%0A%EB%8B%89%EB%84%A4%EC%9E%84%3A%0A%EC%97%B0%EB%9D%BD%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%0AAndroid%20%EA%B8%B0%EA%B8%B0%20%EB%AA%A8%EB%8D%B8%3A%0AAndroid%20OS%20%EB%B2%84%EC%A0%84%3A%0A%ED%94%8C%EB%A0%88%EC%9D%B4%20%EA%B0%80%EB%8A%A5%20%EC%8B%9C%EA%B0%84%EB%8C%80%3A%0A%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EA%B0%80%EB%8A%A5%20%EA%B8%B0%EA%B0%84%3A%0A%ED%94%BC%EB%93%9C%EB%B0%B1%20%EA%B0%80%EB%8A%A5%20%ED%95%AD%EB%AA%A9%3A%20%EC%A1%B0%EC%9E%91%EA%B0%90%20/%20%EB%82%9C%EC%9D%B4%EB%8F%84%20/%20%EB%B2%84%EA%B7%B8%20/%20%ED%99%94%EB%A9%B4%20%EB%B9%84%EC%9C%A8%20/%20%EA%B8%B0%ED%83%80%0AGoogle%20Play%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%B0%B8%EC%97%AC%20%EC%9D%B4%EB%A9%94%EC%9D%BC%28%EB%8B%A4%EB%A5%BC%20%EA%B2%BD%EC%9A%B0%29%3A%0A%EA%B8%B0%ED%83%80%20%EC%9D%98%EA%B2%AC%3A%0A%0A%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%96%88%EA%B3%A0%2C%20%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%95%88%EB%82%B4%EC%99%80%20%ED%94%BC%EB%93%9C%EB%B0%B1%20%ED%99%95%EC%9D%B8%EC%9D%84%20%EC%9C%84%ED%95%B4%20%EC%9C%84%20%EC%A0%95%EB%B3%B4%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EA%B2%83%EC%97%90%20%EB%8F%99%EC%9D%98%ED%95%A9%EB%8B%88%EB%8B%A4.">테스터 신청</a>
           <a class="button" href="privacy.html">지원자 정보 안내</a>
         </div>
       </div>
@@ -280,7 +288,7 @@
       <div class="community">
         <p>공지, 패치노트, 버그 제보, 이벤트는 공식 커뮤니티 개설 후 이곳에 연결합니다.</p>
         <div class="actions">
-          <span class="button disabled" aria-disabled="true">YouTube 준비 중</span>
+          <a class="button" href="https://youtube.com/@rarang-l8o?si=H4aM5kmdD0BrOKnB" target="_blank" rel="noopener noreferrer">YouTube</a>
           <span class="button disabled" aria-disabled="true">Instagram 준비 중</span>
         </div>
       </div>
@@ -289,7 +297,10 @@
     <section class="section" aria-labelledby="support-title">
       <h2 id="support-title">개발 후원</h2>
       <div class="support">
-        <p>후원은 선택 사항이며, 게임 내 아이템이나 기능 보상을 제공하지 않는 순수 개발 응원 용도입니다.</p>
+        <div class="support-copy">
+          <p>후원은 개발과 운영을 돕기 위한 자발적 지원입니다.</p>
+          <p>후원에 따른 게임 내 아이템, 기능, 재화, 스킨, 배지, 랭킹, 쿠폰, 구독 보상은 제공되지 않으며, 후원 여부와 관계없이 게임 이용 조건은 동일합니다.</p>
+        </div>
         <div class="actions">
           <span class="button disabled" aria-disabled="true">Buy Me a Coffee 준비 중</span>
         </div>
@@ -300,9 +311,13 @@
   <footer>
     <div class="footer-links">
       <a href="privacy.html">Privacy Policy</a>
+      <a href="launch-decisions.html">결정사항</a>
+      <a href="brand-decision.html">브랜드 결정</a>
+      <a href="launch-checklist.html">출시 준비 체크리스트</a>
+      <a href="https://youtube.com/@rarang-l8o?si=H4aM5kmdD0BrOKnB" target="_blank" rel="noopener noreferrer">YouTube</a>
       <a href="mailto:bakingstudio.beta@gmail.com">Contact</a>
     </div>
-    <p>Copyright 2026 Zeus Battle. Replace placeholder links before publishing.</p>
+    <p>Copyright 2026 MiniZeus.</p>
   </footer>
 </body>
 </html>

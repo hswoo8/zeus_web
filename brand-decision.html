@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MiniZeus brand decision notes for the Android launch.">
+  <title>미니제우스 브랜드 결정</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080a12;
+      --panel: #111827;
+      --gold: #ffe810;
+      --blue: #51c9ff;
+      --text: #f5f7ff;
+      --muted: #bac4df;
+      --line: rgba(255, 255, 255, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(900px, 100%);
+      margin: 0 auto;
+      padding: 42px 20px 72px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    a {
+      color: var(--gold);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: var(--gold);
+      font-size: clamp(34px, 7vw, 56px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--gold);
+      font-size: 23px;
+      letter-spacing: 0;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    code {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 5px;
+      padding: 2px 5px;
+    }
+
+    .meta {
+      margin: 0 0 28px;
+      color: var(--muted);
+    }
+
+    .notice {
+      padding: 16px;
+      border: 1px solid rgba(255, 232, 16, 0.28);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .decision {
+      display: grid;
+      gap: 10px;
+      margin: 22px 0;
+      padding: 18px;
+      border: 1px solid rgba(81, 201, 255, 0.34);
+      border-radius: 8px;
+      background: rgba(17, 24, 39, 0.74);
+    }
+
+    .decision p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="launch-checklist.html">출시 준비 체크리스트</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+
+    <h1>브랜드 결정</h1>
+    <p class="meta">Android 첫 출시 기준 · 최종 수정일: 2026년 7월 4일</p>
+
+    <p class="notice">브랜드명은 짧게 가져가고, 장르 설명은 Google Play 스토어 문구에서 보완한다. 앱 이름에 부제를 붙이지 않는다.</p>
+
+    <section class="decision" aria-label="Final brand decision">
+      <p><strong>앱 이름:</strong> 미니제우스</p>
+      <p><strong>영문명:</strong> MiniZeus</p>
+      <p><strong>로고/약자:</strong> MZ</p>
+      <p><strong>장르 설명:</strong> 1:1 번개 스킬 대전</p>
+      <p><strong>공식 도메인:</strong> <code>https://www.minizeusgame.com/</code></p>
+      <p><strong>패키지명:</strong> <code>com.bakingstudio.minizeus</code></p>
+    </section>
+
+    <h2>스토어 문구</h2>
+    <p><strong>짧은 설명</strong></p>
+    <p>귀여운 제우스와 펼치는 1:1 번개 스킬 대전</p>
+
+    <p><strong>긴 설명 첫 문장</strong></p>
+    <p>미니제우스는 조이스틱으로 피하고 번개 스킬로 겨루는 1:1 아레나 액션 게임입니다.</p>
+
+    <h2>이름 운영 원칙</h2>
+    <ul>
+      <li>앱 이름은 <code>미니제우스</code> 단독으로 사용한다.</li>
+      <li><code>미니제우스 아레나</code>, <code>미니제우스: 번개 대전</code> 같은 부제형 이름은 첫 출시 앱명으로 쓰지 않는다.</li>
+      <li>싱글, 멀티, MMR, 랭킹은 게임 안 모드명과 스토어 설명에서 전달한다.</li>
+      <li>앱 아이콘과 로고에는 <code>MZ</code>를 보조 마크로 사용할 수 있다.</li>
+    </ul>
+
+    <h2>다음 작업</h2>
+    <ol>
+      <li><code>미니제우스</code>, <code>MiniZeus</code>, <code>Mini Zeus</code>로 KIPRIS, Google Play, App Store, Steam, 도메인을 검색한다.</li>
+      <li>공식 도메인 <code>https://www.minizeusgame.com/</code>의 GitHub Pages 연결 상태를 유지한다.</li>
+      <li>Android 프로젝트에 패키지명 <code>com.bakingstudio.minizeus</code>를 반영한다.</li>
+      <li>앱 표시명, 웹사이트, 개인정보처리방침, Play Console 문구를 <code>미니제우스</code> 기준으로 맞춘다.</li>
+    </ol>
+  </main>
+</body>
+</html>

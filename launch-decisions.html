@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MiniZeus launch decisions summary.">
+  <title>미니제우스 출시 결정사항</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080a12;
+      --panel: #111827;
+      --gold: #ffe810;
+      --text: #f5f7ff;
+      --muted: #bac4df;
+      --line: rgba(255, 255, 255, 0.14);
+      --done: #7ddf89;
+      --todo: #ffcb66;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(820px, 100%);
+      margin: 0 auto;
+      padding: 42px 20px 72px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    a {
+      color: var(--gold);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: var(--gold);
+      font-size: clamp(34px, 7vw, 54px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--gold);
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    p,
+    li,
+    td,
+    th {
+      color: var(--muted);
+    }
+
+    code {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 5px;
+      padding: 2px 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th,
+    td {
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .meta {
+      margin: 0 0 24px;
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-block;
+      min-width: 58px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      color: #0d1420;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .done {
+      background: var(--done);
+    }
+
+    .todo {
+      background: var(--todo);
+    }
+
+    @media (max-width: 680px) {
+      table,
+      thead,
+      tbody,
+      tr,
+      th,
+      td {
+        display: block;
+      }
+
+      th {
+        display: none;
+      }
+
+      td {
+        padding: 9px 0;
+      }
+
+      td::before {
+        display: block;
+        margin-bottom: 3px;
+        color: var(--text);
+        font-weight: 700;
+        content: attr(data-label);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="launch-checklist.html">출시 준비 체크리스트</a>
+      <a href="brand-decision.html">브랜드 결정 상세</a>
+    </nav>
+
+    <h1>출시 결정사항</h1>
+    <p class="meta">첫 출시 기준 · 최종 수정일: 2026년 7월 4일</p>
+
+    <h2>결정 완료</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>항목</th>
+          <th>결정</th>
+          <th>상태</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="항목">앱 이름</td>
+          <td data-label="결정">미니제우스</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">영문명</td>
+          <td data-label="결정">MiniZeus</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">로고 약자</td>
+          <td data-label="결정">MZ</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">앱 이름 부제</td>
+          <td data-label="결정">붙이지 않음. 장르는 스토어 설명에서 전달.</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">장르 설명</td>
+          <td data-label="결정">1:1 번개 스킬 대전</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">공식 도메인</td>
+          <td data-label="결정"><code>https://www.minizeusgame.com/</code></td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">패키지명</td>
+          <td data-label="결정"><code>com.bakingstudio.minizeus</code></td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">GitHub Pages 연결</td>
+          <td data-label="결정">공식 도메인이 GitHub Pages로 정상 응답. GitHub 설정 화면의 DNS check 표시는 갱신 대기.</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">첫 출시 수익화</td>
+          <td data-label="결정">무료, 광고 없음, 인앱결제 없음</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">타겟 연령 방향</td>
+          <td data-label="결정">9~12세 이상 포함. 콘텐츠는 피, 잔인함, 채팅, 유저 생성 콘텐츠 없이 유지.</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">후원 방향</td>
+          <td data-label="결정">앱 안 후원 버튼 없음. 웹 후원만 가능하며 게임 내 보상 없음.</td>
+          <td data-label="상태"><span class="badge done">완료</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>아직 결정 필요</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>항목</th>
+          <th>후보/다음 판단</th>
+          <th>상태</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="항목">상표 출원</td>
+          <td data-label="후보/다음 판단"><code>미니제우스</code>, <code>MiniZeus</code>, <code>Mini Zeus</code> 선행 검색 후 가족 명의 검토.</td>
+          <td data-label="상태"><span class="badge todo">대기</span></td>
+        </tr>
+        <tr>
+          <td data-label="항목">게임제작업/배급업</td>
+          <td data-label="후보/다음 판단">가족 주소지 관할 구청에 무료 Google Play 출시 기준으로 문의.</td>
+          <td data-label="상태"><span class="badge todo">대기</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>앱에서 해야 할 것</h2>
+    <ul>
+      <li>완료: Android <code>applicationId</code>를 <code>com.bakingstudio.minizeus</code>로 변경.</li>
+      <li>완료: Debug 앱은 <code>com.bakingstudio.minizeus.debug</code>로 별도 설치.</li>
+      <li>완료: 앱 표시명을 <code>미니제우스</code>로 변경.</li>
+      <li>완료: 설정 화면에 공식 사이트 <code>https://www.minizeusgame.com/</code> 링크 추가.</li>
+      <li>완료: 앱 내부 개인정보처리방침, 문의, 외부 링크의 이름과 URL 정리.</li>
+      <li>완료: Play Console용 AAB 빌드 생성.</li>
+      <li>완료: 패키지명 변경 후 <code>:android:assembleDebug</code> 빌드와 2기기 설치/실행 확인.</li>
+      <li>유지: 출시 빌드는 광고, 인앱결제, 채팅, 유저 생성 콘텐츠, 서버 저장 기능 없이 유지.</li>
+    </ul>
+
+    <h2>앱 밖에서 해야 할 것</h2>
+    <ul>
+      <li>GitHub Pages의 <code>www.minizeusgame.com</code> DNS check가 통과하면 <code>Enforce HTTPS</code>를 켠다.</li>
+      <li>웹사이트와 개인정보처리방침의 <code>Zeus Battle</code> 문구를 <code>미니제우스</code>와 <code>MiniZeus</code>로 교체한다.</li>
+      <li>Google Play 개발자 계정, 앱 이름, 패키지명, 개인정보처리방침 URL을 준비한다.</li>
+      <li>콘텐츠 등급 설문은 실제 내용 기준으로 작성하고, 타겟 연령은 9~12세 이상 포함 방향으로 맞춘다.</li>
+      <li>Data Safety는 첫 출시 기준으로 광고, 분석 SDK, 로그인, 결제, 서버 저장 없음으로 정리한다.</li>
+      <li>관할 구청에 게임제작업/게임배급업 등록 필요 여부를 문의한다.</li>
+      <li>상표 출원 전 <code>미니제우스</code>, <code>MiniZeus</code>, <code>Mini Zeus</code> 선행 검색을 한다.</li>
+      <li>Git 기록, AI 프롬프트, 원본 아트, 수정 과정, 에셋 라이선스를 백업한다.</li>
+    </ul>
+
+    <h2>스토어 문구</h2>
+    <p><strong>짧은 설명:</strong> 귀여운 제우스와 펼치는 1:1 번개 스킬 대전</p>
+    <p><strong>긴 설명 첫 문장:</strong> 미니제우스는 조이스틱으로 피하고 번개 스킬로 겨루는 1:1 아레나 액션 게임입니다.</p>
+  </main>
+</body>
+</html>
