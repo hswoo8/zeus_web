@@ -1,0 +1,77 @@
+/* Typography from the selected showcase #image-ui cover, mapped role by role.
+ * Same system sans + Georgia; no external font download or generated text image.
+ */
+.hero-copy { font-family: var(--font-body); line-height: normal; color: #e5eaf0; }
+.hero-overline {
+  margin: 0 0 15px;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .23em;
+  color: #dcc18b;
+}
+.hero h1 {
+  margin: 28px 0 13px;
+  font-size: clamp(38px, 5.2vw, 68px);
+  font-weight: 550;
+  line-height: 1.25;
+  letter-spacing: -.065em;
+  text-shadow: 0 3px 20px #05131d88;
+}
+.hero h1 em { color: inherit; }
+.hero-deck {
+  margin: 0;
+  font: italic 20px/1.5 Georgia, serif;
+  color: #dcc9a4;
+}
+.hero-description {
+  margin: 27px 0;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #c2cfda;
+}
+.hero .hero-art-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  min-height: 44px;
+  margin: 0;
+  padding: 0 0 8px;
+  border-bottom: 1px solid #bfd4df6b;
+  color: #e5eaf0;
+  font-size: 11px;
+  text-decoration: none;
+}
+.hero-art-link > span { font-size: 16px; color: #dcc18b; }
+.hero .actions { margin-top: 24px; }
+.hero-caption {
+  position: absolute;
+  left: 6%;
+  right: 5%;
+  bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 9px;
+  line-height: normal;
+  letter-spacing: .16em;
+  color: #bbcad8;
+}
+.hero-caption > span:last-child { color: #89a1b6; letter-spacing: .03em; }
+@media (max-width: 1000px) {
+  .hero-description { font-size: 11px; }
+  .hero-caption { left: 5%; }
+}
+@media (max-width: 760px) {
+  .hero h1 { font-size: 40px; margin: 13px 0; }
+  .hero-overline { font-size: 8px; margin-bottom: 8px; }
+  .hero-deck { font-size: 15px; }
+  .hero .hero-art-link { font-size: 10px; margin-top: 18px; }
+  .hero-caption { left: 7%; bottom: 22px; gap: 12px; font-size: 7px; letter-spacing: .07em; }
+  .hero-caption > span:last-child { max-width: 50%; text-align: right; font-size: 7px; }
+}
+@media (max-width: 700px) {
+  /* Existing mobile layout shows the complete artwork, then the full type block. */
+  .hero-inner { padding-bottom: 30px; }
+  .hero-description { margin: 22px 0 0; font-size: 12px; }
+  .hero-caption { position: static; padding: 0 20px 24px; }
+}
