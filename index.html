@@ -16,10 +16,12 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://www.minizeusgame.com/">
   <link rel="icon" type="image/png" href="assets/app-icon.png">
-  <link rel="stylesheet" href="assets/home-v2/home.css?v=20261002w4">
+  <link rel="stylesheet" href="assets/home-v2/home.css?v=20261002w5">
+  <script src="assets/home-v5/lightning-effect.js" defer></script>
+  <script src="assets/home-v5/lightning-preview.js" defer></script>
   <title>미니제우스 — 작지만 강력한. 승부는 손끝에서.</title>
 </head>
-<body data-site-version="w4-20261002">
+<body data-site-version="w5-20261002">
   <a class="skip-link" href="#main">본문으로 바로가기</a>
   <header class="site-header">
     <div class="header-inner wrap">
@@ -86,6 +88,28 @@
           <li><span class="step">02</span><div><h3>4개의 특수 스킬, 나만의 한 수.</h3><p>지금 공격할지, 다음 기회를 기다릴지. 캐릭터마다 다른 스킬과 타이밍을 내 것으로 만드세요.</p></div></li>
           <li><span class="step">03</span><div><h3>가볍게 시작해서, 깊게 빠져들게.</h3><p>개인 수련에서 감각을 익히고 AI 대전에서 실력을 다져보세요. 익숙해질수록 새로운 연계가 보입니다.</p></div></li>
         </ol>
+      </div>
+    </section>
+
+    <section class="vfx-section wrap" id="vfx" aria-labelledby="vfx-title">
+      <div class="vfx-copy">
+        <p class="eyebrow">LIGHTNING PLAYGROUND</p>
+        <h2 id="vfx-title">손끝에서 터지는<br><em>청백의 번개.</em></h2>
+        <p>작은 접점에서 갈라지고,<br>짧은 잔광으로 끝나는 한순간.<br>화면을 눌러 번개를 깨워보세요.</p>
+        <p class="vfx-note">청백 분기 · 홈페이지에서 즐기는 인터랙티브 아트</p>
+      </div>
+      <div class="vfx-demo" data-lightning-demo>
+        <div class="vfx-demo-head"><span>AETHER FRACTURE</span><span>TOUCH TO PLAY</span></div>
+        <div class="vfx-stage">
+          <img class="vfx-still" data-lightning-still src="assets/home-v5/lightning-still.svg" width="640" height="320" loading="lazy" alt="접점에서 청백색 번개가 여러 갈래로 퍼지는 청백 분기 효과">
+          <button class="vfx-surface" data-lightning-surface type="button" hidden aria-label="청백 분기 번개 효과 한 번 재생" aria-describedby="vfx-instructions"><canvas width="640" height="320" aria-hidden="true"></canvas><span class="vfx-touch-hint" aria-hidden="true">화면을 톡 눌러보세요 <span>↗</span></span></button>
+        </div>
+        <div class="vfx-controls" data-lightning-controls hidden>
+          <div class="vfx-buttons"><button class="vfx-play" data-lightning-replay type="button">번개 터뜨리기 <span aria-hidden="true">ϟ</span></button><button data-lightning-slow type="button" aria-pressed="false">천천히 보기</button></div>
+          <label class="vfx-quiet"><input data-lightning-quiet type="checkbox">섬광 줄이기</label>
+          <p id="vfx-instructions">화면이나 버튼을 누르면 한 번 재생됩니다. 키보드로도 사용할 수 있어요.</p>
+        </div>
+        <noscript><p class="vfx-noscript">지금은 정지 이미지로 표시됩니다. 움직이는 효과는 JavaScript가 켜진 브라우저에서 볼 수 있습니다.</p></noscript>
       </div>
     </section>
 
