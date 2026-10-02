@@ -85,8 +85,8 @@ h2 { margin-top: 18px; font-size: clamp(34px, 3.9vw, 54px); letter-spacing: -1.8
 .characters-section { background: #0c1626; border-block: 1px solid var(--line); }
 .fighters { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
 .fighter { min-width: 0; border: 1px solid #98aed630; background: #0b1322; }
-.fighter-art { position: relative; overflow: hidden; aspect-ratio: 3 / 2; }
-.fighter-art img { width: 100%; height: 100%; object-fit: cover; }
+.fighter-art { position: relative; overflow: hidden; height: 470px; background: linear-gradient(110deg, #1c293c, #40526b 50%, #1c293c); }
+.fighter-art img { width: 100%; height: 100%; object-fit: contain; }
 .fighter-type { position: absolute; bottom: 18px; left: 24px; padding: 5px 11px; font-size: 10px; border: 1px solid #ffffff40; background: #08121fe8; color: #f1e4c8; }
 .fighter-body { padding: 29px 30px 30px; }
 .fighter-en { font-size: 11px; font-weight: 750; color: var(--blue); letter-spacing: 3px; }
@@ -142,6 +142,28 @@ summary::-webkit-details-marker { display: none; }
 .promo-links { display: grid; }
 .media-note { color: #a8b5c8; font-size: 11px; margin-top: 16px; }
 .media-note a { display: inline-block; padding: 8px; text-decoration: underline; text-underline-offset: 4px; }
+.world-section { border-top: 1px solid var(--line); }
+.world-map { border: 1px solid #8ca9d14d; background: #0c1626; }
+.world-map-image { position: relative; }
+.world-map-image > img { width: 100%; height: auto; }
+.map-marker { position: absolute; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 9px; min-height: 44px; padding: 5px 13px 5px 6px; color: #fff8e9; background: #0b172be8; border: 1px solid #f5cc75a8; border-radius: 24px; box-shadow: 0 3px 14px #0006; white-space: nowrap; }
+.map-marker b { display: grid; place-items: center; flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #111b2d; font-size: 13px; }
+.map-marker > span { font-size: 12px; font-weight: 700; }
+.map-marker:hover { background: #23416bf2; }
+.marker-wind { left: 20%; top: 47%; }
+.marker-city { left: 49%; top: 52%; }
+.marker-arena { left: 52%; top: 24%; }
+.marker-prison { left: 78%; top: 29%; }
+.marker-underworld { left: 53%; top: 81%; }
+.world-map figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; padding: 16px 20px; font-size: 10px; color: var(--muted); }
+.world-map figcaption > span:first-child { letter-spacing: 2px; color: #e5ddc8; }
+.world-locations { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 15px; margin-top: 26px; }
+.world-location { padding: 20px 16px; border: 1px solid var(--line); background: #0d1727; }
+.location-number { color: var(--gold); font-size: 11px; letter-spacing: 2px; }
+.world-location h3 { font-size: 16px; margin-block: 12px; line-height: 1.4; }
+.world-location p { color: var(--muted); font-size: 12px; line-height: 1.85; }
+.world-location > a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; color: var(--gold); font-size: 11px; text-decoration: underline; text-underline-offset: 4px; }
+.world-location:target { border-color: var(--gold); background: #1a2a3e; }
 .community-section { position: relative; background: radial-gradient(ellipse at 25% 35%, #18375c99, transparent 65%), #101e32; border-block: 1px solid #7185a52e; }
 .community-section .section { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 .community-heading h2 { font-size: clamp(42px, 4.8vw, 66px); }
@@ -204,7 +226,7 @@ summary::-webkit-details-marker { display: none; }
 @media (max-width: 850px) {
   html { scroll-padding-top: 140px; }
   .header-inner { min-height: 108px; display: grid; grid-template-columns: 1fr auto; gap: 3px 16px; padding-top: 13px; }
-  .main-nav { grid-row: 2; grid-column: 1 / -1; justify-content: space-between; gap: 16px; }
+  .main-nav { grid-row: 2; grid-column: 1 / -1; justify-content: space-between; gap: 8px; }
   .main-nav a { min-height: 43px; font-size: 12px; }
   .brand img { width: 35px; height: 35px; }
   .brand > span { font-size: 18px; }
@@ -225,12 +247,16 @@ summary::-webkit-details-marker { display: none; }
   .play-principles p { font-size: 12px; }
   .fighters { gap: 16px; }
   .story-grid { gap: 16px; }
+  .world-locations { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .map-marker { gap: 6px; min-height: 44px; padding-right: 9px; }
+  .map-marker > span { font-size: 10px; }
   .story-body { padding: 23px 20px 20px; }
   .story-body h3 { font-size: 24px; }
   .promo-brief { grid-template-columns: 120px 1fr; gap: 20px; padding: 22px; }
   .promo-brief > img { width: 120px; height: 100px; }
   .promo-links { display: flex; flex-wrap: wrap; gap: 10px 24px; grid-column: 2; }
   .fighter-description { font-size: 13px; }
+  .fighter-art { height: 380px; }
   .fighter-description br { display: none; }
   .skills { grid-template-columns: 1fr; }
   .skills summary { min-height: 60px; padding: 9px 12px; font-size: 13px; gap: 12px; }
@@ -272,6 +298,7 @@ summary::-webkit-details-marker { display: none; }
   .battle-frame figcaption { font-size: 9px; padding: 10px 12px; }
   .fighters { grid-template-columns: 1fr; gap: 26px; }
   .fighter-body { padding: 24px 20px; }
+  .fighter-art { height: clamp(340px, 112vw, 470px); }
   .fighter h3 { font-size: 29px; }
   .fighter-description { font-size: 13px; }
   .skills { grid-template-columns: 1fr 1fr; gap: 8px; }
@@ -289,6 +316,13 @@ summary::-webkit-details-marker { display: none; }
   .promo-brief > img { width: 100%; height: 160px; object-position: center 55%; }
   .promo-links { grid-column: 1; gap: 8px 25px; }
   .media-note { font-size: 10px; }
+  .map-marker { padding: 5px; min-width: 44px; justify-content: center; }
+  .map-marker > span { display: none; }
+  .world-map figcaption { padding: 13px; font-size: 9px; }
+  .world-locations { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 20px; }
+  .world-location { padding: 17px 14px; }
+  .world-location h3 { font-size: 14px; }
+  .world-location p { font-size: 11px; }
   .community-section .section { grid-template-columns: 1fr; gap: 32px; }
   .community-heading h2 { font-size: 46px; }
   .community-heading > p:last-child { font-size: 13px; }
