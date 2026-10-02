@@ -39,7 +39,7 @@ em { font-style: normal; }
 .header-cta:hover { background: #f5cc7510; }
 .hero { position: relative; isolation: isolate; display: grid; align-items: center; min-height: clamp(650px, 49vw, 830px); background: #0b2447; overflow: hidden; }
 .hero-art, .hero-shade { position: absolute; inset: 0; z-index: -1; }
-.hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+.hero-art img { width: 100%; height: 100%; object-fit: contain; object-position: right center; }
 .hero-shade { background: linear-gradient(90deg, #050e20d9 0%, #050e2066 42%, transparent 70%), linear-gradient(0deg, var(--ink), transparent 32%); }
 .hero-inner { padding-block: 100px 140px; }
 .hero-copy { max-width: 63%; }
@@ -56,6 +56,7 @@ h1 em { color: var(--gold); }
 .button.secondary { background: #0a182e88; border-color: #e4eeff55; color: #f6f7fa; }
 .button.secondary:hover { background: #1c3659; }
 .hero-note { margin-top: 22px; color: #c2cddd; font-size: 11px; letter-spacing: .2px; }
+.hero-art-link { display: inline-flex; align-items: center; gap: 18px; min-height: 44px; margin-top: 6px; font-size: 11px; color: #d4e4ef; text-decoration: underline; text-underline-offset: 5px; text-decoration-color: #d4e4ef66; }
 .scroll-cue { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 24px; min-height: 44px; font-size: 11px; color: #c4cfdf; letter-spacing: 2px; white-space: nowrap; }
 .scroll-cue span { font-size: 22px; color: var(--gold); }
 .game-strip { border-top: 1px solid #f5cc7530; border-bottom: 1px solid #f5cc7530; background: #101b2a; }
@@ -82,36 +83,6 @@ h2 { margin-top: 18px; font-size: clamp(34px, 3.9vw, 54px); letter-spacing: -1.8
 .step { padding-top: 3px; font-size: 12px; color: var(--gold); font-variant-numeric: tabular-nums; }
 .play-principles h3 { font-size: 20px; font-weight: 750; letter-spacing: -.5px; }
 .play-principles p { font-size: 13px; margin-top: 12px; color: var(--muted); line-height: 1.9; }
-.vfx-section { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: 52px; padding-block: 0 110px; }
-.vfx-copy h2 { font-size: clamp(30px, 3.5vw, 46px); }
-.vfx-copy h2 em { color: var(--blue); }
-.vfx-copy > p:not(.eyebrow) { color: var(--muted); font-size: 14px; line-height: 1.9; margin-top: 23px; }
-.vfx-copy > p.vfx-note { font-size: 10px; color: #a5bad0; }
-.vfx-demo { min-width: 0; overflow: hidden; border: 1px solid #77cde54a; background: #0a1624; }
-.vfx-demo-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 16px; padding: 17px 22px; border-bottom: 1px solid #77cde526; font-size: 9px; letter-spacing: 1.8px; color: #bcddea; }
-.vfx-demo-head > span:last-child { color: #96aabe; }
-.vfx-stage { height: 320px; position: relative; background: radial-gradient(ellipse at center, #18384b, #0a1624 70%); }
-.vfx-still { display: block; width: 100%; height: 100%; object-fit: contain; }
-.vfx-surface { display: block; width: 100%; height: 100%; padding: 0; border: 0; border-radius: 0; background: transparent; cursor: pointer; touch-action: manipulation; }
-.vfx-surface canvas { display: block; width: 100%; height: 100%; }
-.vfx-touch-hint { position: absolute; bottom: 20px; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; font-family: inherit; font-size: 11px; line-height: 1.6; color: #b0c5d8; pointer-events: none; }
-.vfx-touch-hint > span { font-size: 17px; color: var(--blue); }
-.vfx-demo.is-playing .vfx-touch-hint { opacity: .25; }
-.vfx-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding: 19px 22px; border-top: 1px solid #77cde526; }
-.vfx-buttons { display: flex; flex-wrap: wrap; gap: 9px; }
-.vfx-buttons button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 46px; padding: 10px 16px; border: 1px solid #79bad14d; border-radius: 3px; background: #193346; color: #dbedf4; font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; }
-.vfx-buttons .vfx-play { background: #c1e7ef; color: #122e40; border-color: #c1e7ef; }
-.vfx-play > span { font-size: 20px; line-height: 1; }
-.vfx-buttons button:hover { border-color: #e3d2ab; }
-.vfx-buttons button[aria-pressed="true"] { border-color: var(--gold); background: #30404b; color: #ffdda0; }
-.vfx-demo button[aria-disabled="true"] { cursor: default; }
-.vfx-quiet { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; color: #c3d4e2; font-size: 11px; cursor: pointer; }
-.vfx-quiet input { width: 18px; height: 18px; margin: 0; accent-color: #b9e5ed; }
-.vfx-controls > p { flex-basis: 100%; color: #9eb4c9; font-size: 10px; line-height: 1.8; }
-.vfx-demo button:focus-visible, .vfx-quiet input:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
-.vfx-demo .vfx-surface:focus-visible { outline-offset: -5px; }
-.vfx-demo [hidden] { display: none !important; }
-.vfx-noscript { padding: 16px 22px; color: var(--muted); font-size: 12px; }
 .characters-section { background: #0c1626; border-block: 1px solid var(--line); }
 .fighters { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
 .fighter { min-width: 0; border: 1px solid #98aed630; background: #0b1322; }
@@ -237,7 +208,6 @@ summary::-webkit-details-marker { display: none; }
 .footer-bottom nav { display: flex; flex-wrap: wrap; gap: 5px 22px; }
 .footer-bottom nav a { display: inline-flex; align-items: center; min-height: 44px; }
 .footer-bottom nav a:hover { color: var(--text); text-decoration: underline; }
-@media (min-width: 1700px) { .hero-art img { object-position: center 48%; } }
 @media (max-width: 1100px) {
   .wrap { width: calc(100% - 64px); }
   .header-inner { gap: 24px; }
@@ -270,9 +240,6 @@ summary::-webkit-details-marker { display: none; }
   .section-heading { gap: 24px; }
   .section-intro { font-size: 13px; max-width: 340px; }
   .gameplay-grid { grid-template-columns: 1fr; }
-  .vfx-section { grid-template-columns: 1fr; gap: 28px; padding-bottom: 78px; }
-  .vfx-copy > p:not(.eyebrow) { margin-top: 18px; }
-  .vfx-stage { height: 320px; }
   .play-principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .play-principles li { display: block; padding: 0; border: 0; }
   .step { display: block; margin-bottom: 12px; }
@@ -298,11 +265,11 @@ summary::-webkit-details-marker { display: none; }
 }
 @media (max-width: 700px) {
   .wrap { width: calc(100% - 40px); }
-  .hero { display: block; min-height: 0; }
-  .hero-art { height: 420px; bottom: auto; }
-  .hero-art img { object-position: 78% center; }
-  .hero-shade { background: linear-gradient(0deg, var(--ink) 0%, var(--ink) 39%, #080f1c11 72%, #080f1c22); }
-  .hero-inner { padding-top: 330px; padding-bottom: 64px; }
+  .hero { display: block; min-height: 0; background: var(--ink); }
+  .hero-art { position: relative; display: block; inset: auto; height: auto; aspect-ratio: 3 / 2; z-index: 0; }
+  .hero-art img { object-fit: contain; object-position: center; }
+  .hero-shade { display: none; }
+  .hero-inner { padding-top: 28px; padding-bottom: 52px; }
   .hero-copy { max-width: 100%; }
   .hero .eyebrow { font-size: 9px; letter-spacing: 2px; }
   .tiny-bolt { font-size: 20px; width: 26px; height: 26px; }
@@ -323,15 +290,6 @@ summary::-webkit-details-marker { display: none; }
   .eyebrow { font-size: 9px; letter-spacing: 2px; }
   .section-intro { margin-top: 22px; max-width: 100%; font-size: 13px; }
   .gameplay-grid { gap: 28px; }
-  .vfx-section { padding-bottom: 65px; }
-  .vfx-copy h2 { font-size: 34px; }
-  .vfx-copy > p:not(.eyebrow) { font-size: 13px; }
-  .vfx-demo-head { padding: 14px 16px; font-size: 8px; letter-spacing: 1.3px; }
-  .vfx-stage { height: 280px; }
-  .vfx-controls { padding: 15px 16px; gap: 8px 14px; }
-  .vfx-buttons { width: 100%; }
-  .vfx-buttons button { flex: 1; min-height: 48px; padding-inline: 10px; font-size: 11px; }
-  .vfx-quiet { min-height: 42px; }
   .play-principles { display: block; }
   .play-principles li { display: flex; gap: 16px; padding-block: 21px; border-bottom: 1px solid var(--line); }
   .step { margin: 0; }
