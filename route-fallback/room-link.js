@@ -44,5 +44,5 @@
     '방 / Room ' + fields.get('code') + ' · ' + regionNames[fields.get('region')] + ' · ' + channel;
   // Authority, path and scheme are fixed app-owned values; no supplied server/redirect URL.
   open.removeAttribute('aria-disabled');
-  open.href = scheme + '://minizeusgame.com' + prefix + '/invite/room?' + fields.toString();
+  open.href = scheme + '://www.minizeusgame.com' + prefix + '/invite/room?' + fields.toString();
 })();
