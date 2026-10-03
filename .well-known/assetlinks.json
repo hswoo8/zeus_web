@@ -1,0 +1,26 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bakingstudio.minizeus",
+      "sha256_cert_fingerprints": [
+        "28:AE:60:9C:36:1E:57:27:A3:82:BD:9F:71:54:C2:21:34:1B:8B:40:B4:CF:CE:40:F6:18:6C:93:B1:C0:0B:60"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bakingstudio.minizeus.debug",
+      "sha256_cert_fingerprints": [
+        "50:AF:A8:10:7A:2F:B6:6E:E7:04:B0:B9:75:AF:E6:CB:3D:F5:8E:4E:39:BF:CD:64:E2:E4:C5:2E:CE:C1:48:12"
+      ]
+    }
+  }
+]
