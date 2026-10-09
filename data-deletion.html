@@ -68,7 +68,7 @@
   <main>
     <nav><a href="index.html">미니제우스 홈</a> · <a href="privacy.html">개인정보처리방침</a></nav>
     <h1>데이터 삭제 요청</h1>
-    <p class="meta">앱: 미니제우스(MiniZeus) · 최종 수정일: 2026년 8월 17일</p>
+    <p class="meta">앱: 미니제우스(MiniZeus) · 최종 수정일: 2026년 10월 10일</p>
 
     <section class="notice">
       <h2 style="margin-top:0; padding-top:0; border-top:0">삭제 요청 방법</h2>
@@ -83,7 +83,8 @@
 
     <h2>삭제되는 데이터</h2>
     <ul>
-      <li>게스트 ID와 해당 ID에 연결된 닉네임</li>
+      <li>게스트 ID와 연결된 닉네임 프로필: 기본 생성·사용자 지정 등 이름 출처, 닉네임, 최초 번호 발급 국가 또는 지역, 일련번호, 개정 번호, 발급·생성·수정 시각</li>
+      <li>해당 ID의 프로필 변경 요청을 보호하기 위해 서버에 저장한 비밀값의 해시</li>
       <li>멀티플레이 경기 기록과 MMR·랭킹 기록</li>
       <li>게스트 ID와 연결된 문의 티켓 및 사용자가 선택하여 입력한 회신 이메일</li>
       <li>그 밖에 개발자 서버에서 해당 게스트 ID로 식별할 수 있는 데이터</li>
@@ -91,6 +92,7 @@
 
     <h2>보관될 수 있는 데이터와 기간</h2>
     <ul>
+      <li>이미 발급한 번호의 재사용을 막기 위한 국가별 최종 발급 번호(상한값)는 보관합니다. 이 별도 카운터에는 플레이어 ID나 이름이 없으며 삭제한 개인 프로필을 보관하는 것이 아닙니다.</li>
       <li>개인과 다시 연결할 수 없는 집계 통계는 서비스 분석을 위해 계속 보관될 수 있습니다.</li>
       <li>Google Analytics의 앱 인스턴스 기반 사용자·이벤트 데이터는 게스트 ID와 연결되지 않으며 속성 설정에 따라 최대 14개월 보관될 수 있습니다. 표준 집계 보고서는 이 보관 설정의 영향을 받지 않을 수 있습니다.</li>
       <li>Firebase Crashlytics의 충돌·ANR 데이터와 관련 설치 식별자는 90일 동안 보관된 후 삭제 절차가 시작됩니다.</li>
@@ -98,14 +100,14 @@
     </ul>
 
     <h2>기기에 저장된 데이터</h2>
-    <p>앱을 삭제하거나 Android 설정에서 미니제우스의 앱 데이터를 삭제하면 기기에 저장된 게스트 ID, 게임 설정 및 로컬 진행 정보가 삭제됩니다. 기기 데이터 삭제만으로 서버 데이터 삭제 요청이 접수되지는 않으므로, 서버 데이터도 삭제하려면 위 절차를 이용하세요.</p>
+    <p>앱을 삭제하거나 Android 설정에서 미니제우스의 앱 데이터를 삭제하면 기기에 저장된 게스트 ID, 닉네임 프로필 사본, 프로필 보호용 비밀값, 게임 설정 및 로컬 진행 정보가 삭제됩니다. 기기 데이터 삭제는 서버 데이터를 삭제하거나 삭제 요청을 접수하지 않으므로, 서버 데이터도 삭제하려면 위 절차를 이용하세요. 삭제 요청에 필요한 전체 게스트 ID는 기기 데이터를 지우기 전에 복사해 두세요. 이후 앱 접속 시 새 ID로 이루어지는 일반 등록은 이전 ID나 이름의 복구 또는 서버 삭제 완료를 뜻하지 않습니다.</p>
 
     <h2>문의</h2>
     <p>앱 또는 개발자의 데이터 처리에 관한 자세한 내용은 <a href="privacy.html">미니제우스 개인정보처리방침</a>을 확인하세요.</p>
 
     <section id="english" lang="en">
       <h1>Data Deletion Request</h1>
-      <p class="meta">App: MiniZeus · Last updated: August 17, 2026</p>
+      <p class="meta">App: MiniZeus · Last updated: October 10, 2026</p>
 
       <section class="notice">
         <h2 style="margin-top:0; padding-top:0; border-top:0">How to request deletion</h2>
@@ -120,7 +122,8 @@
 
       <h2>Data that will be deleted</h2>
       <ul>
-        <li>The guest ID and nickname linked to it.</li>
+        <li>The guest ID and linked nickname profile: generated/custom or legacy origin, nickname, initial number-issuance country or region, serial number, revision, and issuance, creation and update timestamps.</li>
+        <li>The secret hash stored on the server to protect profile writes for that ID.</li>
         <li>Multiplayer match history, MMR, and ranking records.</li>
         <li>Support tickets linked to the guest ID and an optional reply email supplied by the user.</li>
         <li>Other data on the developer server that can be identified by that guest ID.</li>
@@ -128,6 +131,7 @@
 
       <h2>Data that may be retained</h2>
       <ul>
+        <li>A separate country-level last-issued-number high-water mark is retained only to prevent number reuse. This counter contains no player ID or name and does not retain the deleted individual profile.</li>
         <li>Aggregated statistics that can no longer be linked back to an individual may be retained for service analytics.</li>
         <li>Google Analytics app-instance user-level and event-level data is not linked to the guest ID and may be retained for up to 14 months, depending on the property setting. Standard aggregated reports may not be affected by this retention setting.</li>
         <li>Firebase Crashlytics crash and ANR data and associated installation identifiers are retained for 90 days before removal begins.</li>
@@ -135,7 +139,7 @@
       </ul>
 
       <h2>Data stored on the device</h2>
-      <p>Uninstalling MiniZeus or clearing its Android app data removes the guest ID, game settings, and local progress stored on that device. This does not submit a server-data deletion request, so use the process above if you also want server data deleted.</p>
+      <p>Uninstalling MiniZeus or clearing its Android app data removes the guest ID, cached nickname profile, profile-proof secret, game settings and local progress stored on that device. This does not delete server data or submit a server-data deletion request, so use the process above if you also want server data deleted. Copy the full guest ID before clearing local data. Normal registration with a new ID on a later app connection is neither recovery of the old identity or name nor confirmation that server deletion is complete.</p>
 
       <h2>Contact</h2>
       <p>For more information about how the App or developer handles data, read the <a href="privacy.html#retention-deletion-en">MiniZeus Privacy Policy</a>.</p>
