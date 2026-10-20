@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-20",
+  "locale": "ko-KR",
+  "timezone": "Asia/Seoul",
+  "latest_published_id": "android-1.0.3-8",
+  "store_url": "https://play.google.com/store/apps/details?id=com.bakingstudio.minizeus&hl=ko&gl=KR",
+  "releases": [
+    {
+      "id": "android-1.0.3-8",
+      "version_name": "1.0.3",
+      "version_code": 8,
+      "channel": "production",
+      "status": "published",
+      "date": "2026-10-10",
+      "date_kind": "store_updated",
+      "submitted_at": "2026-10-10",
+      "published_at": null,
+      "verified_at": "2026-10-20",
+      "title": "새로운 계급, 더 편해진 시작",
+      "summary": "5단계 계급과 특별 칭호, 첫 시작 안내와 수련을 다듬었습니다.",
+      "changes": [
+        "계급을 도전자·투사·영웅·반신·올림피안의 5단계로 정리하고 배지를 새롭게 바꿨습니다.",
+        "올림피안 중 세계 상위 10명에게 특별 칭호를 표시합니다.",
+        "첫 시작 안내·스킬 수련·감정표현 상점의 장착과 구매 안내를 개선했습니다.",
+        "새 기본 닉네임에 국가별 순번을 적용하고 전투·도감·결과 화면을 다듬었습니다."
+      ],
+      "evidence": [
+        {
+          "kind": "public_store",
+          "url": "https://play.google.com/store/apps/details?id=com.bakingstudio.minizeus&hl=ko&gl=KR",
+          "observed_at": "2026-10-20T14:09:40.404389+00:00",
+          "facts": [
+            "version_name",
+            "store_updated_at",
+            "release_notes"
+          ]
+        },
+        {
+          "kind": "release_record",
+          "reference": "docs/play-store/release-v8/README.md",
+          "facts": [
+            "version_code",
+            "submitted_at"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "android-1.0.2-7",
+      "version_name": "1.0.2",
+      "version_code": 7,
+      "channel": "production",
+      "status": "published",
+      "date": "2026-10-10",
+      "date_kind": "publication_observed",
+      "submitted_at": "2026-10-09",
+      "published_at": null,
+      "verified_at": "2026-10-10",
+      "title": "선택형 보상 광고와 수련 보상",
+      "summary": "이모트·닉네임 변경권을 위한 보상 광고와 첫 완료 보상을 추가했습니다.",
+      "changes": [
+        "원하는 경우 보상 광고를 보고 기존 상점 텍스트 이모트와 닉네임 변경권을 획득할 수 있습니다.",
+        "튜토리얼 첫 완료에 300 GOLD, 캐릭터별 스킬 수련 첫 완료에 100 GOLD를 각각 한 번 지급합니다. 이전 완료자도 업데이트 후 다시 완료하면 한 번 받을 수 있습니다.",
+        "튜토리얼에서 배운 스킬을 다시 사용하고, 완료 화면에서 다음 행동을 선택할 수 있습니다.",
+        "광고 도입에 맞춰 개인정보처리방침을 업데이트했습니다."
+      ],
+      "evidence": [
+        {
+          "kind": "historical_console_record",
+          "reference": "docs/play-store/release-v8/README.md#Play 제출 결과",
+          "observed_at": "2026-10-10",
+          "facts": [
+            "version7_publicly_available"
+          ]
+        },
+        {
+          "kind": "release_record",
+          "reference": "docs/play-store/release-v7/README.md",
+          "facts": [
+            "version_name",
+            "version_code",
+            "submitted_at",
+            "release_notes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "android-1.0.0-5",
+      "version_name": "1.0.0",
+      "version_code": 5,
+      "channel": "production",
+      "status": "published",
+      "date": "2026-10-07",
+      "date_kind": "publication_observed",
+      "submitted_at": null,
+      "published_at": null,
+      "verified_at": "2026-10-07",
+      "title": "미니제우스의 시작",
+      "summary": "미니제우스가 Google Play에 공개되었습니다.",
+      "changes": [
+        "Android에서 미니제우스를 무료로 설치할 수 있습니다."
+      ],
+      "evidence": [
+        {
+          "kind": "historical_release_record",
+          "reference": "docs/play-store/README.md#v100 광고 패치 준비",
+          "observed_at": "2026-10-07",
+          "facts": [
+            "version5_publicly_available"
+          ]
+        },
+        {
+          "kind": "release_record",
+          "reference": "docs/qa/production-version5-v84.md",
+          "facts": [
+            "version_name",
+            "version_code"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "planned-1.1.0",
+      "version_name": "1.1.0",
+      "version_code": null,
+      "channel": "planned",
+      "status": "planned",
+      "date": "2026-10-20",
+      "date_kind": "plan_updated",
+      "submitted_at": null,
+      "published_at": null,
+      "verified_at": "2026-10-20",
+      "title": "제피라와 서풍",
+      "summary": "제피라 무료 이용과 서풍 맵 추가를 준비하고 있습니다.",
+      "changes": [
+        "새 캐릭터와 맵의 연결·효과·밸런스 확인을 거쳐 선보일 예정입니다."
+      ],
+      "evidence": [
+        {
+          "kind": "approved_plan",
+          "reference": "docs/planning/zephyra-release-remaining-20261020.md",
+          "observed_at": "2026-10-20",
+          "facts": [
+            "planned_scope_only"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "planned-1.2.0",
+      "version_name": "1.2.0",
+      "version_code": null,
+      "channel": "planned",
+      "status": "planned",
+      "date": "2026-10-20",
+      "date_kind": "plan_updated",
+      "submitted_at": null,
+      "published_at": null,
+      "verified_at": "2026-10-20",
+      "title": "인앱결제와 상점 개편",
+      "summary": "캐릭터 상품과 상점 개편을 후속 업데이트로 준비합니다.",
+      "changes": [
+        "구매·복원 기능과 이용 조건은 확정 후 안내합니다."
+      ],
+      "evidence": [
+        {
+          "kind": "approved_plan",
+          "reference": "docs/planning/zephyra-release-remaining-20261020.md",
+          "observed_at": "2026-10-20",
+          "facts": [
+            "planned_scope_only"
+          ]
+        }
+      ]
+    }
+  ]
+}
