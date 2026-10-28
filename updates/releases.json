@@ -237,22 +237,22 @@
       ],
       "translations": {
         "en-US": {
-          "title": "Zephyra and the West Wind",
-          "summary": "Free access to Zephyra and the West Wind map are in development.",
+          "title": "Zephyra and Westwind Sanctuary",
+          "summary": "Free access to Zephyra and the Westwind Sanctuary map are in development.",
           "changes": [
             "The new character and map are planned after integration, effects, and balance checks."
           ]
         },
         "ja-JP": {
-          "title": "ゼフィラと西風",
-          "summary": "ゼフィラの無料利用と西風マップの追加を準備しています。",
+          "title": "ゼフィラと西風の聖域",
+          "summary": "ゼフィラの無料利用と西風の聖域マップの追加を準備しています。",
           "changes": [
             "新キャラクターとマップは連携・演出・バランスの確認を経て公開予定です。"
           ]
         },
         "zh-TW": {
-          "title": "Zephyra 與西風",
-          "summary": "正在準備 Zephyra 免費使用及西風地圖。",
+          "title": "澤菲拉與西風聖域",
+          "summary": "正在準備澤菲拉免費使用及西風聖域地圖。",
           "changes": [
             "新角色與地圖預計在整合、特效及平衡確認後推出。"
           ]
