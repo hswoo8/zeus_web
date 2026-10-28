@@ -3,9 +3,88 @@
   "updated_at": "2026-10-28",
   "locale": "ko-KR",
   "timezone": "Asia/Seoul",
-  "latest_published_id": "android-1.0.3-8",
+  "latest_published_id": "android-1.1.0-9",
   "store_url": "https://play.google.com/store/apps/details?id=com.bakingstudio.minizeus&hl=ko&gl=KR",
   "releases": [
+    {
+      "id": "android-1.1.0-9",
+      "version_name": "1.1.0",
+      "version_code": 9,
+      "channel": "production",
+      "status": "published",
+      "date": "2026-10-28",
+      "date_kind": "store_updated",
+      "submitted_at": "2026-10-28",
+      "published_at": "2026-10-28T18:47:00+09:00",
+      "verified_at": "2026-10-28",
+      "title": "제피라와 서풍 성역",
+      "summary": "새 캐릭터와 전장, 분산 회복과 대전 흐름을 업데이트했습니다.",
+      "changes": [
+        "새 캐릭터 제피라와 새 전장 서풍 성역을 추가했습니다.",
+        "서풍 성역에서 흩어지는 회복 씨앗을 활용할 수 있습니다.",
+        "전투와 결과 화면을 다듬고, 재대결 요청·수락과 멀티플레이 로비 복귀 흐름을 개선했습니다.",
+        "다른 대전으로 이동할 때 새 대전 검색이 시작되도록 수정했습니다.",
+        "연결 복구와 전반적인 안정성을 개선했습니다."
+      ],
+      "evidence": [
+        {
+          "kind": "public_store",
+          "url": "https://play.google.com/store/apps/details?id=com.bakingstudio.minizeus&hl=ko&gl=KR",
+          "observed_at": "2026-10-28T10:42:07.726897+00:00",
+          "facts": [
+            "version_name",
+            "store_updated_at",
+            "release_notes"
+          ]
+        },
+        {
+          "kind": "historical_console_record",
+          "reference": "tmp/publication-preparation-20261028/upload-results.json",
+          "observed_at": "2026-10-28T10:34:09.579689+00:00",
+          "facts": [
+            "version_code",
+            "released_at_kst",
+            "full_rollout"
+          ],
+          "device_delivery_verified": false
+        }
+      ],
+      "translations": {
+        "en-US": {
+          "title": "Zephyra and Westwind Sanctuary",
+          "summary": "A new character, arena, scattered healing seeds, and match-flow improvements.",
+          "changes": [
+            "Added Zephyra and the new Westwind Sanctuary arena.",
+            "In Westwind Sanctuary, players can collect scattered healing seeds.",
+            "Refined battle and result screens, rematch request and acceptance indicators, and the return to the multiplayer lobby.",
+            "Fixed starting a new match search when choosing another match.",
+            "Improved connection recovery and overall stability."
+          ]
+        },
+        "ja-JP": {
+          "title": "ゼフィラと西風の聖域",
+          "summary": "新キャラクターとアリーナ、分散する回復の種、対戦フローを更新しました。",
+          "changes": [
+            "新キャラクター「ゼフィラ」と新アリーナ「西風の聖域」を追加しました。",
+            "西風の聖域で、散らばる回復の種を利用できます。",
+            "バトルと結果画面を調整し、再戦のリクエスト・承諾表示とマルチプレイロビーへの復帰を改善しました。",
+            "別の対戦を選んだ際に、新しい対戦の検索が始まるよう修正しました。",
+            "接続復旧と全体的な安定性を改善しました。"
+          ]
+        },
+        "zh-TW": {
+          "title": "澤菲拉與西風聖域",
+          "summary": "新增角色與競技場，更新分散的恢復種子及對戰流程。",
+          "changes": [
+            "新增角色「澤菲拉」與競技場「西風聖域」。",
+            "在西風聖域中，可以收集散落的恢復種子。",
+            "調整戰鬥與結果畫面，改善再次對戰請求與接受提示，以及返回多人遊戲大廳的流程。",
+            "修正選擇其他對戰時，會開始搜尋新對戰。",
+            "改善連線恢復與整體穩定性。"
+          ]
+        }
+      }
+    },
     {
       "id": "android-1.0.3-8",
       "version_name": "1.0.3",
@@ -210,26 +289,27 @@
       }
     },
     {
-      "id": "planned-1.1.0",
-      "version_name": "1.1.0",
+      "id": "planned-1.1.1",
+      "version_name": "1.1.1",
       "version_code": null,
       "channel": "planned",
       "status": "planned",
-      "date": "2026-10-20",
+      "date": "2026-10-28",
       "date_kind": "plan_updated",
       "submitted_at": null,
       "published_at": null,
-      "verified_at": "2026-10-20",
-      "title": "제피라와 서풍",
-      "summary": "제피라 무료 이용과 서풍 맵 추가를 준비하고 있습니다.",
+      "verified_at": "2026-10-28",
+      "title": "이야기와 가이드",
+      "summary": "이야기 연표와 책 읽기, 캐릭터 가이드를 준비하고 있습니다.",
       "changes": [
-        "새 캐릭터와 맵의 연결·효과·밸런스 확인을 거쳐 선보일 예정입니다."
+        "4개 이야기의 시간순 연표와 책 읽기 화면을 준비합니다.",
+        "스토리와 가이드 영상은 준비 및 공개 확인 후 안내합니다."
       ],
       "evidence": [
         {
           "kind": "approved_plan",
-          "reference": "docs/planning/zephyra-release-remaining-20261020.md",
-          "observed_at": "2026-10-20",
+          "reference": "docs/ui-prototypes/decisions/olympus-story-book-20261028.html",
+          "observed_at": "2026-10-28",
           "facts": [
             "planned_scope_only"
           ]
@@ -237,24 +317,27 @@
       ],
       "translations": {
         "en-US": {
-          "title": "Zephyra and Westwind Sanctuary",
-          "summary": "Free access to Zephyra and the Westwind Sanctuary map are in development.",
+          "title": "Stories and guides",
+          "summary": "We are preparing a story timeline, book readers, and character guides.",
           "changes": [
-            "The new character and map are planned after integration, effects, and balance checks."
+            "A chronological timeline of four stories and book readers are in preparation.",
+            "Story and guide videos will be announced after they are ready and publicly available."
           ]
         },
         "ja-JP": {
-          "title": "ゼフィラと西風の聖域",
-          "summary": "ゼフィラの無料利用と西風の聖域マップの追加を準備しています。",
+          "title": "ストーリーとガイド",
+          "summary": "ストーリーの年表、本を読む画面、キャラクターガイドを準備しています。",
           "changes": [
-            "新キャラクターとマップは連携・演出・バランスの確認を経て公開予定です。"
+            "4つの物語を時系列でたどる年表と読書画面を準備しています。",
+            "ストーリー・ガイド動画は準備と公開の確認後にお知らせします。"
           ]
         },
         "zh-TW": {
-          "title": "澤菲拉與西風聖域",
-          "summary": "正在準備澤菲拉免費使用及西風聖域地圖。",
+          "title": "故事與指南",
+          "summary": "正在準備故事時間軸、閱讀頁面與角色指南。",
           "changes": [
-            "新角色與地圖預計在整合、特效及平衡確認後推出。"
+            "正在準備依時間順序排列的四段故事與閱讀頁面。",
+            "故事及指南影片將於準備完成並確認公開後公布。"
           ]
         }
       }

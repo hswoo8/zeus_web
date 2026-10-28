@@ -1,0 +1,30 @@
+/* Approved Zephyra artwork, localized release introduction, and claim notice. */
+.zephyra-feature { display:grid; grid-template-columns:minmax(220px, 38%) 1fr; margin-top:26px; border:1px solid #a3cfc555; background:#0f1d27; overflow:hidden; }
+.zephyra-feature > img { width:100%; height:100%; max-height:480px; object-fit:contain; object-position:center; background:#172d2c; }
+.zephyra-feature-copy { align-self:center; padding:36px clamp(24px, 4vw, 52px); }
+.zephyra-feature-copy h3 { margin:10px 0 14px; font-size:clamp(28px, 3.5vw, 42px); }
+.zephyra-feature-copy > p:not(.fighter-en):not(.zephyra-notice) { color:#c6d8dc; font-size:14px; line-height:1.9; }
+.zephyra-notice { margin:22px 0; padding:18px 20px; border-left:2px solid #c6dfad; background:#223c36; color:#dfefe2; font-size:13px; line-height:1.9; }
+.zephyra-notice strong { color:#f4f3d0; }
+.zephyra-notice p + p { margin-top:7px; }
+.zephyra-landing { padding-block:42px 88px; }
+.zephyra-landing > .release-languages { margin:0 0 30px; }
+.zephyra-landing-grid { display:grid; grid-template-columns:minmax(280px, 44%) 1fr; gap:clamp(30px, 6vw, 80px); align-items:center; }
+.zephyra-landing-art { border:1px solid #a3cfc555; background:#172d2c; }
+.zephyra-landing-art img { width:100%; height:auto; }
+.zephyra-landing-copy h1 { margin:18px 0 6px; font-size:clamp(40px, 5.2vw, 68px); letter-spacing:-.055em; }
+.zephyra-deck { color:#c4dfad; font:italic 19px/1.6 Georgia, serif; }
+.zephyra-description { margin-top:20px; color:#cad8dd; line-height:1.9; font-size:15px; }
+.zephyra-landing-copy h2 { margin-top:32px; font-size:22px; }
+.zephyra-landing-copy ol { padding-left:22px; color:#cad8dd; font-size:14px; line-height:1.9; }
+.zephyra-landing-copy li + li { margin-top:8px; }
+.zephyra-landing-copy .button { margin-top:12px; }
+.zephyra-page .footer-bottom { padding-top:0; }
+@media(max-width:700px) {
+  .zephyra-feature { grid-template-columns:1fr; }
+  .zephyra-feature > img { max-height:420px; }
+  .zephyra-feature-copy { padding:26px 22px; }
+  .zephyra-landing { padding-block:24px 60px; }
+  .zephyra-landing-grid { grid-template-columns:1fr; gap:24px; }
+  .zephyra-landing-art { max-width:480px; margin:auto; }
+}
