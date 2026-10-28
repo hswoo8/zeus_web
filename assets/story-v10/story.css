@@ -1,0 +1,6 @@
+/* Story order and links, added without changing the existing artwork. */
+.story-index { color:#dcc18b; font-size:10px; letter-spacing:.16em; }
+#story-trickster .fighter-en { color:#d4adff; }
+#story-zephyra .fighter-en { color:#bce2c5; }
+.zephyra-video-actions { display:flex; flex-wrap:wrap; gap:4px 24px; margin-top:20px; }
+.zephyra-video-actions .text-link { display:inline-flex; align-items:center; min-height:44px; }
