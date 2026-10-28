@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-20",
+  "updated_at": "2026-10-28",
   "locale": "ko-KR",
   "timezone": "Asia/Seoul",
   "latest_published_id": "android-1.0.3-8",
@@ -16,7 +16,7 @@
       "date_kind": "store_updated",
       "submitted_at": "2026-10-10",
       "published_at": null,
-      "verified_at": "2026-10-20",
+      "verified_at": "2026-10-28",
       "title": "새로운 계급, 더 편해진 시작",
       "summary": "5단계 계급과 특별 칭호, 첫 시작 안내와 수련을 다듬었습니다.",
       "changes": [
@@ -43,8 +43,41 @@
             "version_code",
             "submitted_at"
           ]
+        },
+        {
+          "kind": "public_store",
+          "url": "https://play.google.com/store/apps/details?id=com.bakingstudio.minizeus&hl=ko&gl=KR",
+          "observed_at": "2026-10-28",
+          "facts": [
+            "version_name",
+            "store_updated_at",
+            "release_notes"
+          ]
         }
-      ]
+      ],
+      "translations": {
+        "en-US": {
+          "title": "New ranks, a smoother start",
+          "summary": "Five rank tiers, special titles and improvements to getting started.",
+          "changes": [
+            "Ranks now have five tiers: Challenger, Fighter, Hero, Demigod and Olympian, with new badges. Olympians in the global top 10 receive special titles. Improved getting started, skill training, and equip and purchase guides in the emote shop. New default nicknames use country-based numbers. Refined battle visuals, the character codex and result screens."
+          ]
+        },
+        "ja-JP": {
+          "title": "新しいランクと遊びやすいスタート",
+          "summary": "5段階のランクと特別称号、初回案内などを改善しました。",
+          "changes": [
+            "ランクを挑戦者・闘士・英雄・半神・オリュンピアンの5段階に整理し、バッジを刷新しました。オリュンピアンの世界上位10名には特別な称号が表示されます。初回ガイド、スキル修練、エモートショップの装備・購入ガイドを改善しました。新しい初期ニックネームに国別の連番を導入し、バトル・図鑑・結果画面を調整しました。"
+          ]
+        },
+        "zh-TW": {
+          "title": "全新階級，輕鬆展開冒險",
+          "summary": "調整為五個階級與特殊稱號，並改善新手引導。",
+          "changes": [
+            "階級改為挑戰者、鬥士、英雄、半神、奧林帕斯神五階，並更新徽章。全球前10名且達到奧林帕斯神的玩家會顯示特殊稱號。改善初次遊玩指引、技能修練與表情商店的裝備及購買指引。新預設暱稱採用各國獨立流水號，並調整戰鬥、圖鑑與結果畫面。"
+          ]
+        }
+      }
     },
     {
       "id": "android-1.0.2-7",
@@ -84,7 +117,39 @@
             "release_notes"
           ]
         }
-      ]
+      ],
+      "translations": {
+        "en-US": {
+          "title": "Optional reward ads and training rewards",
+          "summary": "Optional reward ads for emotes and nickname tickets, plus first-completion rewards.",
+          "changes": [
+            "Added optional rewarded ads to unlock existing shop text emotes or earn nickname-change tickets.",
+            "Earn 300 GOLD for first completing the tutorial and 100 GOLD for first completing each character's skill training, once per reward. Previous completers can also earn each reward once by completing the tutorial or training again after updating.",
+            "Reuse learned skills during the tutorial and choose your next action from the completion screen.",
+            "Privacy Policy updated to cover advertising."
+          ]
+        },
+        "ja-JP": {
+          "title": "任意のリワード広告と修練報酬",
+          "summary": "エモート・名前変更券のリワード広告と初回完了報酬を追加しました。",
+          "changes": [
+            "任意で視聴するリワード広告を追加しました。ショップの既存のテキストエモートやニックネーム変更券を獲得できます。",
+            "チュートリアルの初回完了で300 GOLD、キャラクターごとのスキル修練の初回完了で100 GOLDを、それぞれ一度だけ獲得できます。すでに完了した方も、更新後に改めて完了すると各報酬を一度受け取れます。",
+            "チュートリアルで習得済みのスキルを再使用でき、完了画面から次の行動を選べます。",
+            "広告導入に伴い、プライバシーポリシーを更新しました。"
+          ]
+        },
+        "zh-TW": {
+          "title": "自選獎勵廣告與修練獎勵",
+          "summary": "新增表情、暱稱變更券的自選獎勵廣告與首次完成獎勵。",
+          "changes": [
+            "新增可自行選擇觀看的獎勵廣告，可取得商店現有的文字表情或暱稱變更券。",
+            "首次完成教學可獲得300 GOLD，首次完成各角色的技能修練可獲得100 GOLD，每項獎勵限領一次。先前已完成的玩家，更新後再次完成也可領取一次。",
+            "教學中可再次使用已學會的技能，並從完成畫面選擇下一步行動。",
+            "已配合廣告功能更新隱私權政策。"
+          ]
+        }
+      }
     },
     {
       "id": "android-1.0.0-5",
@@ -119,7 +184,30 @@
             "version_code"
           ]
         }
-      ]
+      ],
+      "translations": {
+        "en-US": {
+          "title": "The beginning of MiniZeus",
+          "summary": "MiniZeus became available on Google Play.",
+          "changes": [
+            "MiniZeus can be installed for free on Android."
+          ]
+        },
+        "ja-JP": {
+          "title": "ミニゼウスの始まり",
+          "summary": "ミニゼウスがGoogle Playで公開されました。",
+          "changes": [
+            "Androidでミニゼウスを無料でインストールできます。"
+          ]
+        },
+        "zh-TW": {
+          "title": "MiniZeus 的起點",
+          "summary": "MiniZeus 已於 Google Play 上架。",
+          "changes": [
+            "可在 Android 免費安裝 MiniZeus。"
+          ]
+        }
+      }
     },
     {
       "id": "planned-1.1.0",
@@ -146,7 +234,30 @@
             "planned_scope_only"
           ]
         }
-      ]
+      ],
+      "translations": {
+        "en-US": {
+          "title": "Zephyra and the West Wind",
+          "summary": "Free access to Zephyra and the West Wind map are in development.",
+          "changes": [
+            "The new character and map are planned after integration, effects, and balance checks."
+          ]
+        },
+        "ja-JP": {
+          "title": "ゼフィラと西風",
+          "summary": "ゼフィラの無料利用と西風マップの追加を準備しています。",
+          "changes": [
+            "新キャラクターとマップは連携・演出・バランスの確認を経て公開予定です。"
+          ]
+        },
+        "zh-TW": {
+          "title": "Zephyra 與西風",
+          "summary": "正在準備 Zephyra 免費使用及西風地圖。",
+          "changes": [
+            "新角色與地圖預計在整合、特效及平衡確認後推出。"
+          ]
+        }
+      }
     },
     {
       "id": "planned-1.2.0",
@@ -173,7 +284,36 @@
             "planned_scope_only"
           ]
         }
-      ]
+      ],
+      "translations": {
+        "en-US": {
+          "title": "In-app purchases and shop updates",
+          "summary": "Character products and shop updates are planned for a future release.",
+          "changes": [
+            "Purchase, restoration, and usage details will be announced when confirmed."
+          ]
+        },
+        "ja-JP": {
+          "title": "アプリ内購入とショップの改善",
+          "summary": "キャラクター商品とショップの改善を今後の更新として準備しています。",
+          "changes": [
+            "購入・復元機能と利用条件は確定後にお知らせします。"
+          ]
+        },
+        "zh-TW": {
+          "title": "應用程式內購與商店改版",
+          "summary": "角色商品與商店改版正規劃於後續更新推出。",
+          "changes": [
+            "購買、還原功能與使用條件將於確認後公布。"
+          ]
+        }
+      }
     }
+  ],
+  "supported_locales": [
+    "ko-KR",
+    "en-US",
+    "ja-JP",
+    "zh-TW"
   ]
 }

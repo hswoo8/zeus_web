@@ -56,3 +56,8 @@
   body:not(.updates-page) .main-nav { justify-content: flex-start; overflow-x: auto; gap: 20px; padding: 0 3px; }
   body:not(.updates-page) .main-nav a { flex-shrink: 0; }
 }
+
+/* Manual update-language selection; no JavaScript or browser-language tracking. */
+.release-languages { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px; margin-top: 18px; }
+.release-languages a { display: inline-flex; align-items: center; min-height: 44px; color: #c5d5e8; font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.release-languages a[aria-current="page"] { color: #dcc18b; text-decoration-thickness: 2px; }
