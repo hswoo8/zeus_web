@@ -136,7 +136,3 @@
 
 /* The homepage now has seven menu links; allow a second line on narrow widths. */
 .site-header .main-nav { flex-wrap: wrap; row-gap: 0; min-width: 0; }
-
-/* Rejected event art is removed while a new game-character composition is prepared. */
-.challenge-page .event-hero--text { display: block; }
-.challenge-page .event-hero--text .hero-copy { max-width: 720px; }
