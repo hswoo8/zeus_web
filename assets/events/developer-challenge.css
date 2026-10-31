@@ -39,6 +39,7 @@
 .challenge-page .reward strong { color: var(--text); font-weight: 650; }
 .challenge-page .reward-amount { margin-block: 5px 0; color: var(--gold); font: 54px/1.2 Georgia, serif; letter-spacing: -.035em; }
 .challenge-page .reward-amount span { margin-left: 7px; font: 500 22px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.challenge-page .reward-amount small { display: block; margin-top: 8px; font: 500 17px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0; }
 .challenge-page .reward-note { margin-top: 9px; color: var(--muted); font-size: 12px; }
 .challenge-page .date { margin-top: 22px; font-size: 13px; font-variant-numeric: tabular-nums; }
 .challenge-page .date > span { display: inline-block; margin-right: 10px; color: var(--gold); }
@@ -49,9 +50,9 @@
 .challenge-page .button.primary:hover { background: #ffdea0; }
 .challenge-page .button.secondary { color: var(--text); border-color: #dbe8ff55; background: #ffffff03; }
 .challenge-page .button.secondary:hover { background: #1c3659; }
-.challenge-page .hero-art { position: relative; align-self: stretch; display: flex; flex-direction: column; justify-content: center; background: radial-gradient(ellipse at 65% 42%, #27446b77, #0d192b55 65%); border: 1px solid #f5cc7526; }
+.challenge-page .hero-art { position: relative; align-self: center; display: flex; flex-direction: column; justify-content: center; background: radial-gradient(ellipse at 65% 42%, #27446b77, #0d192b55 65%); border: 1px solid #f5cc7526; }
 .challenge-page .hero-art picture { display: block; }
-.challenge-page .hero-art img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 69% center; }
+.challenge-page .hero-art img { width: 100%; aspect-ratio: 3 / 2; object-fit: contain; object-position: center; }
 .challenge-page .hero-art figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 18px 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
 .challenge-page .hero-art figcaption span:first-child { color: #ead7b5; font-family: Georgia, serif; letter-spacing: .11em; }
 .challenge-page .participation, .challenge-page .rules { padding-block: 70px; border-top: 1px solid var(--line); }
@@ -81,7 +82,7 @@
 @media (max-width: 950px) {
   .challenge-page .wrap { width: calc(100% - 48px); }
   .challenge-page .event-hero { gap: 24px; padding-block: 48px 60px; }
-  .challenge-page .hero-art img { aspect-ratio: 3 / 4; }
+  .challenge-page .hero-art img { aspect-ratio: 3 / 2; }
   .challenge-page .hero-art figcaption { padding: 15px; }
   .challenge-page .steps { gap: 22px; }
   .challenge-page .rules { grid-template-columns: minmax(0, .7fr) minmax(0, 1.4fr); gap: 32px; }
